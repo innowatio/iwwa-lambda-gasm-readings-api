@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 
-dotenv.load();
+dotenv.config();
 
 export const KINESIS_STREAM_NAME = process.env.KINESIS_STREAM_NAME || 'KINESIS_STREAM_NAME';
 export const KINESIS_PARTITION_KEY = "iwwa-lambda-gasm-readings-api";

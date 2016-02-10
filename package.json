@@ -1,11 +1,11 @@
 {
-  "name": "iwwa-lambda-aggregated-readings-api",
+  "name": "iwwa-lambda-gams-readings-api",
   "version": "1.0.0",
-  "description": "Aggregated readings API",
+  "description": "Gasm readings API",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/innowation/iwwa-lambda-aggregated-readings-api.git"
+    "url": "https://github.com/innowation/iwwa-lambda-gams-readings-api.git"
   },
   "dependencies": {
     "aws-sdk": "^2.2.34",
@@ -13,10 +13,9 @@
     "bunyan": "^1.5.1",
     "dotenv": "^1.2.0",
     "lambda-connect": "^1.0.2",
-    "lcm-validate-body": "^1.0.0",
     "lk-dispatch": "^1.1.0",
     "node-uuid": "^1.4.7",
-    "ramda": "^0.18.0"
+    "ramda": "^0.19.1"
   },
   "devDependencies": {
     "babel": "^5.8.34",
