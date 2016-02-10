@@ -19,18 +19,18 @@ export const handler = connect({log})
   
         var myBinaryParser = (new bitConverter.BinaryParser(true, true));
         var m_Model ={}; 
-        for (var prop in req.params) {
+        for (var prop in req.query) {
             var thenum = prop.replace(/^\D+/g, "");                                
             if (thenum !="") {
                 var block = prop.replace(thenum, "");
                 
                 if (block == "GASM") {
-                    m_Model.sensorId=req.params.ID+"_"+prop;
-                    m_Model.date=parse_dtLog(req.params.D);                
+                    m_Model.sensorId=req.query.ID+"_"+prop;
+                    m_Model.date=parse_dtLog(req.query.D);                
                     
                     var measurementsList=[];
                     var  measurements={};
-                    var data =req.params[prop].split(";"); 
+                    var data =req.query[prop].split(";"); 
                     if (data.length >= 0) { 
                         measurements={};
                         measurements.type="CorrectedGasCounter";
