@@ -15,7 +15,8 @@
     "lambda-connect": "^1.0.2",
     "lk-dispatch": "^1.1.0",
     "node-uuid": "^1.4.7",
-    "ramda": "^0.19.1"
+    "ramda": "^0.19.1",
+    "moment": "^2.11.2"
   },
   "devDependencies": {
     "babel": "^5.8.34",
