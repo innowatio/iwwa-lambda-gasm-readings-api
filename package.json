@@ -46,6 +46,6 @@
     "dev_windows": "npm run test_windows -- --watch",
     "test_windows": "set NODE_PATH=src&& set NODE_ENV=test&& mocha --compilers js:babel/register --recursive"
   },
-  "author": "Team Wattellina <wattellina@mondora.com>",
+  "author": "Clevergy D.R.T.C. <clevergydrtc@gmail.com>",
   "license": "Apache-2.0"
 }
