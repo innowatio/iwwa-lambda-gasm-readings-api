@@ -37,15 +37,15 @@ describe("gasm readings handler", () => {
         };
         var fakeContext ={"succeed": sinon.spy(), "fail": sinon.spy()};
         var result = handler(fakeRequest, fakeContext);         
-        //assertions
-        result.then(function(data) {
+        // assertions
+        result.then(function (result) {
             expect(dispatchSpy).to.have.callCount(1);
             expect(dispatchSpy).to.have.been.calledWith("element inserted in collection gasm-raw-reading");
             
             var secondParameter = dispatchSpy.getCall(0).args[1];
             expect(secondParameter).to.deep.equal(expectedOutpu1);
             done();
-        }, function(error) {
+        }, function (error) {
             done(error);
         });        
     });

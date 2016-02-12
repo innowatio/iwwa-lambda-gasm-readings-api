@@ -1,10 +1,7 @@
 import * as bitConverter from  "./BinaryParser";
 import * as dtLogParser from "./dtLogParser";
-import * as h2b from "./hexToBinConverter";
 
 export function getEventFromObject (req) {
-
-    var myBinaryParser = (new bitConverter.BinaryParser(true, true));
     var m_Model ={}; 
     for (var prop in req.query) {
         var thenum = prop.replace(/^\D+/g, "");                                
@@ -23,7 +20,7 @@ export function getEventFromObject (req) {
                     measurements.type="CorrectedGasCounter";
                     measurements.source="reading";  
                     measurements.unitOfMeasurement="m3";                    
-                    measurements.value = myBinaryParser.toDouble(h2b.hex2bin(data[0]));
+                    measurements.value = bitConverter.toDouble(data[0]); 
                     measurementsList.push(measurements);
                 }
                 if (data.length >= 1) {
@@ -63,7 +60,7 @@ export function getEventFromObject (req) {
                     measurements.type="CorrectedVolInErrCond";
                     measurements.source="reading";  
                     measurements.unitOfMeasurement="m3";                      
-                    measurements.value=myBinaryParser.toDouble(h2b.hex2bin(data[5]));
+                    measurements.value= bitConverter.toDouble(data[5]);
                     measurementsList.push(measurements);
                 }  
                 if (data.length >= 6) {
@@ -71,7 +68,7 @@ export function getEventFromObject (req) {
                     measurements.type="CorrectedVolDay";
                     measurements.source="reading";  
                     measurements.unitOfMeasurement="m3";                      
-                    measurements.value=myBinaryParser.toDouble(h2b.hex2bin(data[6]));
+                    measurements.value= bitConverter.toDouble(data[6]);
                     measurementsList.push(measurements);
                 } 
                 if (data.length >= 7) {
@@ -79,7 +76,7 @@ export function getEventFromObject (req) {
                     measurements.type="CorrectedVolMonth";
                     measurements.source="reading";  
                     measurements.unitOfMeasurement="m3";                      
-                    measurements.value=myBinaryParser.toDouble(h2b.hex2bin(data[7]));
+                    measurements.value= bitConverter.toDouble(data[7]);
                     measurementsList.push(measurements);
                 } 
                 if (data.length >= 8) {
