@@ -12,6 +12,8 @@ export function getEventFromObject (req) {
                 m_Model.sensorId=req.query.ID+"_"+prop;
                 m_Model.date=dtLogParser.parse_dtLog(req.query.D); 
                 
+                console.log("dtLog", m_Model.date);
+                
                 var measurementsList=[];
                 var  measurements={};
                 var data =req.query[prop].split(";"); 

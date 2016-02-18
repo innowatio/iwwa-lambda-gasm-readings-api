@@ -14,9 +14,10 @@
     "dotenv": "^1.2.0",
     "lambda-connect": "^1.0.2",
     "lk-dispatch": "^1.1.0",
+    "moment": "^2.11.2",
+    "moment-timezone": "^0.5.0",
     "node-uuid": "^1.4.7",
-    "ramda": "^0.19.1",
-    "moment": "^2.11.2"
+    "ramda": "^0.19.1"
   },
   "devDependencies": {
     "babel": "^5.8.34",
