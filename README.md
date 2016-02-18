@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.org/innowatio/iwwa-lambda-gams-readings-api.svg?branch=master)](https://travis-ci.org/innowatio/iwwa-lambda-gams-readings-api)
-[![Dependency Status](https://david-dm.org/innowatio/iwwa-lambda-gams-readings-api.svg)](https://david-dm.org/innowatio/iwwa-lambda-gams-readings-api)
-[![devDependency Status](https://david-dm.org/innowatio/iwwa-lambda-gams-readings-api/dev-status.svg)](https://david-dm.org/innowatio/iwwa-lambda-gams-readings-api#info=devDependencies)
+[![Build Status](https://travis-ci.org/innowatio/iwwa-lambda-gasm-readings-api.svg?branch=master)](https://travis-ci.org/innowatio/iwwa-lambda-gasm-readings-api)
+[![Dependency Status](https://david-dm.org/innowatio/iwwa-lambda-gasm-readings-api.svg)](https://david-dm.org/innowatio/iwwa-lambda-gasm-readings-api)
+[![devDependency Status](https://david-dm.org/innowatio/iwwa-lambda-gasm-readings-api/dev-status.svg)](https://david-dm.org/innowatio/iwwa-lambda-gasm-readings-api#info=devDependencies)
 
-# iwwa-lambda-gams-readings-api
+# iwwa-lambda-gasm-readings-api
 
 Allow posting more than one reading into a single call.
 

@@ -11,7 +11,3 @@ export function toDouble (m_hex) {
     }    
     return  buf.readDoubleBE(0);   
 } 
- 
-
- 
- 
